@@ -88,11 +88,11 @@ int main(int argc, const char * argv[]) {
             printf("%d \n", tmp->value); 
          }
     printf("Exercise VI Free all node !! //use a loop to help \n");
-         for(tmp=head;tmp!=NULL;tmp=tmp->next)
+         for(tmp=head;tmp!=NULL;tmp=head)
          {  head=head->next;
             printf("\nFree %d\n",tmp->value);
             free(tmp);
-            printf("%d \n", tmp->value); 
+           
          }       
            
            // What is missing???
